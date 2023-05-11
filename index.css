@@ -1,0 +1,243 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--bg-color: #020312;
+	--text-color: #fff;
+	--main-color: #064406;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: var(--text-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	padding: 10px 25px;
+	margin: 0 2px;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: var(--main-color);
+	color: var(--text-color);
+}
+#menu-icon{
+	font-size: 36px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+section{
+	padding: 160px 16% 90px;
+}
+.home{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	
+}
+.home-text h1{
+	margin: 20px 0;
+	font-size: var(--h1-font);
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 2px;
+}
+span{
+	color: var(--main-color);
+}
+
+.home-text h4{
+	color: var(--main-color);
+	font-size: 24px;
+	font-weight: 600;
+}
+.home-text h3{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+
+header.sticky{
+	padding: 10px 16%;
+	background: var(--bg-color);
+	border-bottom: 1px solid #0e1630;
+}
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+	background: rgb(18, 15, 31);
+}
+
+.about-text h2{
+	font-size: var(--h2-font);
+	color: rgb(34, 80, 17);
+}
+.about-text p{
+	color: var(rgb(245, 242, 242));
+	font-size: var(--p-font);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+
+
+.about-img img{
+	height: 25rem;
+	width: 100%;
+	max-width: 460px;
+	animation: bounce 1.5s infinite;
+	transition: 4s;
+	filter: 100%;
+	border-radius: 100%;
+ }
+
+ .services-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 5rem;
+	margin-left: 4rem;
+}
+
+
+.main-text h2{
+color: #0bd815;
+font-size: bold;
+}
+
+
+.box1 img{
+width: 23rem;
+
+transition: 1s;
+transform-style: preserve-3d;
+margin-left: -5rem;	
+}
+
+
+
+.box2 img{
+	width: 23rem;	
+
+    transition: 1s;
+    transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	margin-right: -35rem;
+	margin-top: -16rem;
+	}
+
+
+	.box3 img{
+		width: 15rem;
+		height: 15rem;
+
+     
+		transition: 1s;
+		transform-style: preserve-3d;
+	    margin-left: 5rem;
+	    margin-top: 10rem;	
+		text-align: center;	
+		padding-left: -12rem;
+		
+
+		}
+
+/* .min2 .p{
+color: #064406;
+} */
+		
+#contact{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+	background-color: #04060f;
+}
+
+.contact-text h2{
+	font-size: var(--h2-font);
+	color: #064406;
+	
+}
+
+.contact-list{
+	margin-bottom: 3rem;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a{
+	display: block;
+	color: var(--second-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--main-color);
+}
+.contact-icons i{
+	height: 40px;
+	width: 40px;
+	background: #12141c;
+	border-radius: 0.5rem;
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: var(--text-color);
+	background: var(--main-color);
+}
